@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+    <input type="text" value="Первое">
+    <input type="text" value="Второе">
+
+    <script>
+           $(document).ready(function() {
+            $('input').on('blur', function() {
+                let val = $(this).val();
+                $('#test').text(val);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
